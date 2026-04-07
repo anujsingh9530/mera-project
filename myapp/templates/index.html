@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anuj Singh | Portfolio</title>
+
+<style>
+
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+scroll-behavior:smooth;
+}
+
+/* ===== BACKGROUND (Developer Image) ===== */
+body{
+background:url("https://images.unsplash.com/photo-1498050108023-c5249f4df085") no-repeat center/cover;
+background-attachment:fixed;
+color:white;
+}
+
+/* Dark overlay */
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.75);
+z-index:-1;
+}
+
+/* NAVBAR */
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:rgba(0,0,0,0.85);
+position:sticky;
+top:0;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#00ffcc;
+}
+
+/* HERO */
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.profile{
+width:160px;
+border-radius:50%;
+border:5px solid #00ffcc;
+margin-bottom:20px;
+}
+
+/* SECTION */
+section{
+padding:80px 20px;
+text-align:center;
+}
+
+h2{
+color:#00ffcc;
+margin-bottom:30px;
+}
+
+/* SKILLS */
+.skills{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.skill-card{
+width:160px;
+padding:25px;
+background:rgba(255,255,255,0.08);
+border-radius:15px;
+transition:0.3s;
+}
+
+.skill-card:hover{
+transform:translateY(-10px);
+background:#00ffcc;
+color:black;
+}
+
+.skill-card img{
+width:60px;
+margin-bottom:10px;
+}
+
+/* PROJECTS */
+.projects{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+}
+
+.card{
+width:280px;
+background:rgba(255,255,255,0.08);
+border-radius:15px;
+overflow:hidden;
+transition:.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+/* CONTACT */
+.contact-box{
+max-width:500px;
+margin:auto;
+}
+
+.contact-box input,
+.contact-box textarea{
+width:100%;
+padding:15px;
+margin:10px 0;
+border:none;
+border-radius:6px;
+}
+
+.you{
+padding:15px 30px;
+border:none;
+background:#00ffcc;
+font-size:18px;
+border-radius:6px;
+cursor:pointer;
+}
+
+.you:hover{
+background:white;
+}
+
+/* FOOTER */
+footer{
+background:black;
+padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+<h2>Anuj Singh</h2>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+<div>
+<img src="" class="profile">
+<h1>Hi, I'm Anuj Singh</h1>
+<h3>Python Django Developer</h3>
+<p>I build web applications using Django, Python, HTML, CSS and Bootstrap.</p>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+<h2>My Skills</h2>
+
+<div class="skills">
+
+<div class="skill-card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+<h3>Python</h3>
+</div>
+
+<div class="skill-card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg">
+<h3>Django</h3>
+</div>
+
+<div class="skill-card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+<h3>HTML5</h3>
+</div>
+
+<div class="skill-card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+<h3>CSS3</h3>
+</div>
+
+<div class="skill-card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg">
+<h3>Bootstrap</h3>
+</div>
+
+<div class="skill-card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
+<h3>Git</h3>
+</div>
+
+<div class="skill-card">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
+<h3>MySQL</h3>
+</div>
+
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<h2>My Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1512820790803-83ca734da794">
+<h3>Book Management System</h3>
+<p>CRUD based Django application.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c">
+<h3>Login System</h3>
+<p>User authentication using Django.</p>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact Me</h2>
+
+<div class="contact-box">
+<form method="post">
+    {% csrf_token %}
+<input type="text" placeholder="Your Name" name="A" required >
+<input type="email" placeholder="Your Email" name="B" required>
+<textarea rows="5" placeholder="Your Message" name="C"></textarea>
+<input type="submit" class="you" name="Send" value="Send">
+</form>
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Anuj Singh Portfolio</p>
+</footer>
+
+</body>
+</html>
